@@ -1289,74 +1289,112 @@ header{
       .nav-cta { white-space:normal; text-align:center; }
     }
 
-  /* ANDROID HERO WIDTH FIX */
+  /* =====================================================
+   FINAL ANDROID HERO FIX
+   ===================================================== */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1100px) {
 
-  .hero,
-  .hero-inner,
-  .hero-copy,
-  .hero-visual {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .hero-inner {
+  .reference-hero-inner {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    gap: 30px !important;
-  }
-
-  .hero-copy {
-    flex: 0 0 100% !important;
-    width: 100% !important;
-  }
-
-  .hero h1 {
     width: 100% !important;
     max-width: 100% !important;
-    display: block !important;
-    font-size: 40px !important;
-    line-height: 1.08 !important;
-    letter-spacing: -1px !important;
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: normal !important;
+    min-width: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    gap: 35px !important;
   }
 
-  .hero h1 span {
+  .hero-copy-new {
     display: block !important;
     width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+
+  .hero-copy-new h1 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
     white-space: normal !important;
     word-break: normal !important;
     overflow-wrap: normal !important;
   }
 
-  .hero-subtitle {
+  .hero-copy-new p {
+    display: block !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 610px !important;
+    min-width: 0 !important;
     white-space: normal !important;
     word-break: normal !important;
-    overflow-wrap: normal !important;
-  }
-
-  .hero p {
-    width: 100% !important;
-    max-width: 100% !important;
+    overflow-wrap: break-word !important;
   }
 
   .hero-actions {
     width: 100% !important;
+    max-width: 100% !important;
   }
 
   .hero-trust {
     width: 100% !important;
+    max-width: 100% !important;
   }
 
   .hero-visual {
-    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 430px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-self: center !important;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .reference-hero-inner {
+    padding: 38px 16px 58px !important;
+  }
+
+  .hero-copy-new h1 {
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1.2px !important;
+    margin: 16px 0 18px !important;
+  }
+
+  .hero-copy-new h1 .hero-word {
+    display: inline !important;
+    font-size: 1em !important;
+    line-height: inherit !important;
+    letter-spacing: inherit !important;
+  }
+
+  .hero-copy-new h1 .hero-tail {
+    display: inline !important;
+  }
+
+  .hero-copy-new p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-visual {
+    max-width: 100% !important;
+  }
+
+  .hero-image-card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 420px !important;
   }
 
 }
