@@ -1289,25 +1289,77 @@ header{
       .nav-cta { white-space:normal; text-align:center; }
     }
 
-    @media (max-width: 380px) {
-      .reference-hero-inner { padding-left:13px; padding-right:13px; }
-      .hero-copy-new h1 { font-size:38px; letter-spacing:-1px; }
-      .hero-copy-new p { font-size:15px; }
-      .hero-trust { font-size:11px; }
-      section { padding-left:13px; padding-right:13px; }
-      .nav { padding-left:9px; padding-right:9px; }
-      .brand img { width:42px !important; height:42px !important; }
-      .brand-text strong { font-size:14px !important; }
-      .brand-text span { font-size:8px !important; }
-    }
+  /* ANDROID HERO WIDTH FIX */
 
-    @media (min-width: 701px) and (max-width: 1050px) {
-      .reference-hero-inner { grid-template-columns:1fr 0.85fr; gap:35px; padding-left:22px; padding-right:22px; }
-      .hero-copy-new h1 { font-size:clamp(44px, 6vw, 64px); }
-      .hero-copy-new p { font-size:17px; }
-      .hero-image-card img { height:420px; }
-    }
+@media (max-width: 600px) {
 
+  .hero,
+  .hero-inner,
+  .hero-copy,
+  .hero-visual {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .hero-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 30px !important;
+  }
+
+  .hero-copy {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+
+  .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    font-size: 40px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .hero h1 span {
+    display: block !important;
+    width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .hero-subtitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .hero p {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-actions {
+    width: 100% !important;
+  }
+
+  .hero-trust {
+    width: 100% !important;
+  }
+
+  .hero-visual {
+    flex: 0 0 100% !important;
+  }
+
+}
   </style>
  </head>
  <body>
