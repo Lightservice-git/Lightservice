@@ -1480,12 +1480,20 @@ header{
   filter: none !important;
   visibility: visible !important;
 }
-.about .section-head h2,
+.about .section-head h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-weight: 800 !important;
+}
 .why-card h3 {
   color: #17324d !important;
   -webkit-text-fill-color: #17324d !important;
 }
-.about .section-head p,
+.about .section-head p {
+  color: #f1f5f9 !important;
+  -webkit-text-fill-color: #f1f5f9 !important;
+  font-weight: 600 !important;
+}
 .why-card p {
   color: #667085 !important;
   -webkit-text-fill-color: #667085 !important;
@@ -1518,13 +1526,19 @@ header{
 }
 .contact-info h3,
 .contact-info .contact-line strong {
-  color: #062f63 !important;
-  -webkit-text-fill-color: #062f63 !important;
+  color: #17324d !important;
+  -webkit-text-fill-color: #17324d !important;
 }
 .contact-info > p,
 .contact-info .contact-line span {
-  color: #667085 !important;
-  -webkit-text-fill-color: #667085 !important;
+  color: #17324d !important;
+  -webkit-text-fill-color: #17324d !important;
+  font-weight: 600 !important;
+}
+.contact-info .contact-line strong[style*="margin-top:10px"] {
+  color: #17324d !important;
+  -webkit-text-fill-color: #17324d !important;
+  font-weight: 800 !important;
 }
 /* Keep phone/email links clearly readable */
 .contact-info .contact-line a {
@@ -2121,11 +2135,11 @@ header{
           Phone
          </strong>
          <a href="tel:+2348138336358">
-          0813 833 6358 [Lagos State]
+          0813 833 6358 <strong>[Lagos State]</strong>
          </a>
          <br/>
          <a href="tel:+2349010545397">
-          0901 054 5397 [Ogun State, Mowe]
+          0901 054 5397 <strong>[Ogun State, Mowe]</strong>
          </a>
         </div>
        </div>
@@ -2150,9 +2164,9 @@ header{
          <strong>
           Address
          </strong>
-         <span>
+         <strong style="font-weight:800 !important;">
           No. 2 Salau, Oriola Street, Oworonshoki, Lagos.
-         </span>
+         </strong>
          <strong style="display:block;margin-top:10px;">
           Pakuro Bus Stop, Ogo-Oluwa Estate,<br/>
           beside Redeem Church, Ogun State.
